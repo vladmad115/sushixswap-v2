@@ -14,3 +14,4 @@ import {console2} from "forge-std/console2.sol";
 
 contract SushiXSwapBaseTest is BaseTest {
  SushiXSwapV2 public sushiXswap;
+ StargateAdapter public stargateAdapter;
