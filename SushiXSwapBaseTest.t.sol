@@ -16,3 +16,4 @@ contract SushiXSwapBaseTest is BaseTest {
  SushiXSwapV2 public sushiXswap;
  StargateAdapter public stargateAdapter;
  IRouteProcessor public routeProcessor;
+ RouteProcessorHelper public routeProcessorHelper;
