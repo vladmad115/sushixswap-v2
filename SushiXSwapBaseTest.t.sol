@@ -17,3 +17,6 @@ contract SushiXSwapBaseTest is BaseTest {
  StargateAdapter public stargateAdapter;
  IRouteProcessor public routeProcessor;
  RouteProcessorHelper public routeProcessorHelper;
+
+    IWETH public weth;
+    ERC20 public sushi;
