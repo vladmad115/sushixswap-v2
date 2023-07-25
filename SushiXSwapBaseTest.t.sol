@@ -20,3 +20,4 @@ contract SushiXSwapBaseTest is BaseTest {
 
     IWETH public weth;
     ERC20 public sushi;
+  ERC20 public usdc;
