@@ -23,3 +23,5 @@ contract SushiXSwapBaseTest is BaseTest {
   ERC20 public usdc;
 
     address constant NATIVE_ADDRESS =
+0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE;
+    address public operator = address(0xbeef);
