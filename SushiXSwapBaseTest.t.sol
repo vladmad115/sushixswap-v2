@@ -25,3 +25,4 @@ contract SushiXSwapBaseTest is BaseTest {
     address constant NATIVE_ADDRESS =
 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE;
     address public operator = address(0xbeef);
+ address public owner = address(0x420);
