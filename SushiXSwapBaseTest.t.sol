@@ -26,3 +26,6 @@ contract SushiXSwapBaseTest is BaseTest {
 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE;
     address public operator = address(0xbeef);
  address public owner = address(0x420);
+ address public user = address(0x4201);
+
+    function setUp() public override {
