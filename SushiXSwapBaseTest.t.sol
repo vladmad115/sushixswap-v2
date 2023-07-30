@@ -29,3 +29,5 @@ contract SushiXSwapBaseTest is BaseTest {
  address public user = address(0x4201);
 
     function setUp() public override {
+ forkMainnet();
+        super.setUp();
