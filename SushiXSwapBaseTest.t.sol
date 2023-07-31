@@ -31,3 +31,5 @@ contract SushiXSwapBaseTest is BaseTest {
     function setUp() public override {
  forkMainnet();
         super.setUp();
+
+        weth = IWETH(constants.getAddress("mainnet.weth"));
