@@ -33,3 +33,5 @@ contract SushiXSwapBaseTest is BaseTest {
         super.setUp();
 
         weth = IWETH(constants.getAddress("mainnet.weth"));
+ sushi = ERC20(constants.getAddress("mainnet.sushi"));
+        usdc = ERC20(constants.getAddress("mainnet.usdc"));
