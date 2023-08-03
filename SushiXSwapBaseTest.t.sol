@@ -36,3 +36,5 @@ contract SushiXSwapBaseTest is BaseTest {
  sushi = ERC20(constants.getAddress("mainnet.sushi"));
         usdc = ERC20(constants.getAddress("mainnet.usdc"));
  usdt = ERC20(constants.getAddress("mainnet.usdt"));
+
+        vm.deal(address(operator), 100 ether);
