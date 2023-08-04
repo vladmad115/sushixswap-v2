@@ -38,3 +38,4 @@ contract SushiXSwapBaseTest is BaseTest {
  usdt = ERC20(constants.getAddress("mainnet.usdt"));
 
         vm.deal(address(operator), 100 ether);
+ deal(address(weth), address(operator), 100 ether);
