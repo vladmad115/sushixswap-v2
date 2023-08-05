@@ -39,3 +39,4 @@ contract SushiXSwapBaseTest is BaseTest {
 
         vm.deal(address(operator), 100 ether);
  deal(address(weth), address(operator), 100 ether);
+  deal(address(usdc), address(operator), 1 ether);
