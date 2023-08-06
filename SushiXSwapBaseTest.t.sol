@@ -40,3 +40,6 @@ contract SushiXSwapBaseTest is BaseTest {
         vm.deal(address(operator), 100 ether);
  deal(address(weth), address(operator), 100 ether);
   deal(address(usdc), address(operator), 1 ether);
+  deal(address(sushi), address(operator), 1000 ether);
+
+        routeProcessor = IRouteProcessor(
