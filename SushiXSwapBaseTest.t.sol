@@ -45,3 +45,5 @@ contract SushiXSwapBaseTest is BaseTest {
         routeProcessor = IRouteProcessor(
     constants.getAddress("mainnet.routeProcessor")
         );
+routeProcessorHelper = new RouteProcessorHelper(
+            constants.getAddress("mainnet.v2Factory"),
