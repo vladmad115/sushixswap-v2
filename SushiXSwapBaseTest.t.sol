@@ -47,3 +47,4 @@ contract SushiXSwapBaseTest is BaseTest {
         );
 routeProcessorHelper = new RouteProcessorHelper(
             constants.getAddress("mainnet.v2Factory"),
+ constants.getAddress("mainnet.v3Factory"),
