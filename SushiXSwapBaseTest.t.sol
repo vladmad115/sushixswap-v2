@@ -53,3 +53,4 @@ routeProcessorHelper = new RouteProcessorHelper(
    );
 
         vm.startPrank(owner);
+ sushiXswap = new SushiXSwapV2(routeProcessor, address(weth));
