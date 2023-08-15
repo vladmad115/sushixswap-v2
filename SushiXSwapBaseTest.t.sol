@@ -55,3 +55,6 @@ routeProcessorHelper = new RouteProcessorHelper(
         // add operator as privileged
         vm.startPrank(owner);
  sushiXswap = new SushiXSwapV2(routeProcessor, address(weth));
+
+        // add operator as privileged
+        sushiXswap.setPrivileged(operator, true);
