@@ -58,3 +58,6 @@ routeProcessorHelper = new RouteProcessorHelper(
 
         // add operator as privileged
         sushiXswap.setPrivileged(operator, true);
+
+        // setup stargate adapter
+        stargateAdapter = new StargateAdapter(
