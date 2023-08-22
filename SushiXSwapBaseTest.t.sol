@@ -63,3 +63,4 @@ routeProcessorHelper = new RouteProcessorHelper(
         stargateAdapter = new StargateAdapter(
  constants.getAddress("mainnet.stargateRouter"),
  constants.getAddress("mainnet.stargateWidget"),
+ constants.getAddress("mainnet.sgeth"),
