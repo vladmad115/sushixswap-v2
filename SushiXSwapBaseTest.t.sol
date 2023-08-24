@@ -65,3 +65,5 @@ routeProcessorHelper = new RouteProcessorHelper(
  constants.getAddress("mainnet.stargateWidget"),
  constants.getAddress("mainnet.sgeth"),
  constants.getAddress("mainnet.routeProcessor"),
+ constants.getAddress("mainnet.weth")
+        );
