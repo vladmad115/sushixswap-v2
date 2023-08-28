@@ -67,3 +67,4 @@ routeProcessorHelper = new RouteProcessorHelper(
  constants.getAddress("mainnet.routeProcessor"),
  constants.getAddress("mainnet.weth")
         );
+   sushiXswap.updateAdapterStatus(address(stargateAdapter), true);
