@@ -68,3 +68,6 @@ routeProcessorHelper = new RouteProcessorHelper(
  constants.getAddress("mainnet.weth")
         );
    sushiXswap.updateAdapterStatus(address(stargateAdapter), true);
+
+        vm.stopPrank();
+    }
