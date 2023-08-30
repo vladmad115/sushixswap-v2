@@ -71,3 +71,5 @@ routeProcessorHelper = new RouteProcessorHelper(
 
         vm.stopPrank();
     }
+
+    function test_Pause() public {
