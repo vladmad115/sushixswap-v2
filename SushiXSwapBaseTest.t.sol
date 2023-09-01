@@ -75,3 +75,5 @@ routeProcessorHelper = new RouteProcessorHelper(
     function test_Pause() public {
 vm.prank(owner);
         sushiXswap.pause();
+
+        vm.startPrank(operator);
