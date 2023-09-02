@@ -77,3 +77,4 @@ vm.prank(owner);
         sushiXswap.pause();
 
         vm.startPrank(operator);
+ sushiXswap.pause();
