@@ -78,3 +78,5 @@ vm.prank(owner);
 
         vm.startPrank(operator);
  sushiXswap.pause();
+ // operator, paused, sendMesssage call
+        vm.expectRevert();
