@@ -80,3 +80,4 @@ vm.prank(owner);
  sushiXswap.pause();
  // operator, paused, sendMesssage call
         vm.expectRevert();
+sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
