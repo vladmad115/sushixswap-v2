@@ -83,3 +83,6 @@ vm.prank(owner);
 sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
 
         sushiXswap.resume();
+
+        vm.stopPrank();
+    }
