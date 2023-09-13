@@ -86,3 +86,6 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
 
         vm.stopPrank();
     }
+
+    // uint64 keeps it max amount to ~18 weth
+    function test_RescueTokens(uint64 amountToRescue) public {
