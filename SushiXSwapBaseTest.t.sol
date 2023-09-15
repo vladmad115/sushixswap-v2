@@ -92,3 +92,4 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
      vm.assume(amountToRescue > 0.1 ether);
 
         vm.deal(address(sushiXswap), amountToRescue);
+  deal(address(sushi), address(sushiXswap), amountToRescue);
