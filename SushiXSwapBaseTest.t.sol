@@ -96,3 +96,5 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
  deal(address(weth), address(sushiXswap), amountToRescue);
 
         // reverts if not owner
+ vm.prank(operator);
+        vm.expectRevert();
