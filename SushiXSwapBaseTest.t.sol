@@ -98,3 +98,6 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
         // reverts if not owner
  vm.prank(operator);
         vm.expectRevert();
+ sushiXswap.rescueTokens(NATIVE_ADDRESS, user);
+
+        vm.startPrank(owner);
