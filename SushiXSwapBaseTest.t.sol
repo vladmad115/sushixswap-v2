@@ -103,3 +103,4 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
         vm.startPrank(owner);
  sushiXswap.rescueTokens(NATIVE_ADDRESS, user);
         sushiXswap.rescueTokens(address(sushi), user);
+ sushiXswap.rescueTokens(address(weth), user);
