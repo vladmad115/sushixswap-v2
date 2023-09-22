@@ -107,3 +107,7 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
  vm.stopPrank();
 
         assertEq(user.balance, amountToRescue);
+  assertEq(sushi.balanceOf(user), amountToRescue);
+    }
+
+    function test_OwnerGuard() public {
