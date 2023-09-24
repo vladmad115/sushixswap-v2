@@ -111,3 +111,7 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
     }
 
     function test_OwnerGuard() public {
+  vm.startPrank(operator);
+
+        vm.expectRevert();
+        sushiXswap.setPrivileged(address(0x01), true);
