@@ -121,3 +121,8 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
 
         vm.expectRevert();
         sushiXswap.updateRouteProcessor(address(0x01));
+
+        vm.startPrank(owner);
+        sushiXswap.setPrivileged(address(0x01), true);
+        sushiXswap.updateAdapterStatus(address(0x01), true);
+        sushiXswap.updateRouteProcessor(address(0x01));
