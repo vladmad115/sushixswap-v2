@@ -126,3 +126,6 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
         sushiXswap.setPrivileged(address(0x01), true);
         sushiXswap.updateAdapterStatus(address(0x01), true);
         sushiXswap.updateRouteProcessor(address(0x01));
+}
+
+    function test_RevertWhenSendMessageStargate() public {
