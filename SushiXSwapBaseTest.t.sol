@@ -129,3 +129,6 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
 }
 
     function test_RevertWhenSendMessageStargate() public {
+  // sendMessage not implemented for stargate adapter
+        vm.expectRevert();
+        sushiXswap.sendMessage(address(stargateAdapter), "");
