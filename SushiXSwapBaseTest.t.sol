@@ -132,3 +132,5 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
   // sendMessage not implemented for stargate adapter
         vm.expectRevert();
         sushiXswap.sendMessage(address(stargateAdapter), "");
+
+    function testFuzz_SwapERC20ToERC20(uint64 amount) public {
