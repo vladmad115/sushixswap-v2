@@ -140,3 +140,6 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
 
         // basic swap weth to usdc
         bytes memory computedRoute = routeProcessorHelper.computeRoute(
+ true, // rpHasToken
+            false, // isV2
+            address(weth), // tokenIn
