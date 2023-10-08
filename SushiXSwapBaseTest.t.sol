@@ -152,3 +152,5 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
         ERC20(address(weth)).approve(address(sushiXswap), amount);
 
         IRouteProcessor.RouteProcessorData memory rpd = IRouteProcessor
+  .RouteProcessorData({
+                tokenIn: address(weth),
