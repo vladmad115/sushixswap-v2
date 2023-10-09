@@ -154,3 +154,5 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
         IRouteProcessor.RouteProcessorData memory rpd = IRouteProcessor
   .RouteProcessorData({
                 tokenIn: address(weth),
+  amountIn: amount,
+                tokenOut: address(usdc),
