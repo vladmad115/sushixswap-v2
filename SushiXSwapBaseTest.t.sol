@@ -156,3 +156,9 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
                 tokenIn: address(weth),
   amountIn: amount,
                 tokenOut: address(usdc),
+ amountOutMin: 0,
+                to: user,
+                route: computedRoute
+            });
+
+        bytes memory rpd_encoded = abi.encode(rpd);
