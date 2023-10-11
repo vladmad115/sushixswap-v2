@@ -162,3 +162,9 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
             });
 
         bytes memory rpd_encoded = abi.encode(rpd);
+
+        sushiXswap.swap(rpd_encoded);
+
+        vm.stopPrank();
+
+        assertEq(weth.balanceOf(user), 0, "weth balance should be 0");
