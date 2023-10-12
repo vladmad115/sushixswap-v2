@@ -168,3 +168,5 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
         vm.stopPrank();
 
         assertEq(weth.balanceOf(user), 0, "weth balance should be 0");
+  assertGt(
+            usdc.balanceOf(user),
