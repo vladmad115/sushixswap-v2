@@ -177,3 +177,5 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
 
     function testFuzz_SwapNativeToERC20(uint64 amount) public {
         vm.assume(amount > 0.1 ether);
+
+        deal(address(weth), user, amount);
