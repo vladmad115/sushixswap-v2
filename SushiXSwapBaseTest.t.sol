@@ -179,3 +179,6 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
         vm.assume(amount > 0.1 ether);
 
         deal(address(weth), user, amount);
+
+        // basic swap weth to usdc
+        bytes memory computedRoute = routeProcessorHelper.computeRoute(
