@@ -185,3 +185,5 @@ sushiXswap.sendMessage(address(stargateAdapter), abi.encode(0x01));
   true, // rpHasToken
             false, // isV2
 address(weth), // tokenIn
+ address(usdc), // tokenOut
+            500, // fee
