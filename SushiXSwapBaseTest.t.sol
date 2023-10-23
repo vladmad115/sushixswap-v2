@@ -194,3 +194,5 @@ address(weth), // tokenIn
         ERC20(address(weth)).approve(address(sushiXswap), amount);
 
         IRouteProcessor.RouteProcessorData memory rpd = IRouteProcessor
+  .RouteProcessorData({
+                tokenIn: address(weth),
