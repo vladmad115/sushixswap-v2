@@ -204,3 +204,7 @@ address(weth), // tokenIn
             });
 
         bytes memory rpd_encoded = abi.encode(rpd);
+
+        sushiXswap.swap(rpd_encoded);
+
+        vm.stopPrank();
