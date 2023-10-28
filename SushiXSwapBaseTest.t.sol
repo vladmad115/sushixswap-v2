@@ -208,3 +208,6 @@ address(weth), // tokenIn
         sushiXswap.swap(rpd_encoded);
 
         vm.stopPrank();
+  }
+
+    // uint64 keeps it max amount to ~18 weth
