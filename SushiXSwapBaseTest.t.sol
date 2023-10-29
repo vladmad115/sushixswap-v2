@@ -211,3 +211,4 @@ address(weth), // tokenIn
   }
 
     // uint64 keeps it max amount to ~18 weth
+  function test_RescueTokens(uint64 amountToRescue) public {
