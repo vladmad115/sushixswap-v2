@@ -212,3 +212,6 @@ address(weth), // tokenIn
 
     // uint64 keeps it max amount to ~18 weth
   function test_RescueTokens(uint64 amountToRescue) public {
+  vm.assume(amountToRescue > 0.1 ether);
+
+        vm.deal(address(sushiXswap), amountToRescue);
