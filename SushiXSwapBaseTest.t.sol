@@ -215,3 +215,4 @@ address(weth), // tokenIn
   vm.assume(amountToRescue > 0.1 ether);
 
         vm.deal(address(sushiXswap), amountToRescue);
+ deal(address(sushi), address(sushiXswap), amountToRescue);
