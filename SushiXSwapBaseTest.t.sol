@@ -216,3 +216,6 @@ address(weth), // tokenIn
 
         vm.deal(address(sushiXswap), amountToRescue);
  deal(address(sushi), address(sushiXswap), amountToRescue);
+deal(address(weth), address(sushiXswap), amountToRescue);
+
+        // reverts if not owner
