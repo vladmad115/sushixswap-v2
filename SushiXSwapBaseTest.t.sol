@@ -219,3 +219,5 @@ address(weth), // tokenIn
 deal(address(weth), address(sushiXswap), amountToRescue);
 
         // reverts if not owner
+   vm.prank(operator);
+        vm.expectRevert();
