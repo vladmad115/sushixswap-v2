@@ -221,3 +221,7 @@ deal(address(weth), address(sushiXswap), amountToRescue);
         // reverts if not owner
    vm.prank(operator);
         vm.expectRevert();
+ sushiXswap.rescueTokens(NATIVE_ADDRESS, user);
+
+        vm.startPrank(owner);
+        sushiXswap.rescueTokens(NATIVE_ADDRESS, user);
