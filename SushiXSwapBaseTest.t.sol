@@ -225,3 +225,8 @@ deal(address(weth), address(sushiXswap), amountToRescue);
 
         vm.startPrank(owner);
         sushiXswap.rescueTokens(NATIVE_ADDRESS, user);
+ sushiXswap.rescueTokens(address(sushi), user);
+        sushiXswap.rescueTokens(address(weth), user);
+        vm.stopPrank();
+
+        assertEq(user.balance, amountToRescue);
