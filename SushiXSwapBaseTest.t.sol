@@ -232,3 +232,6 @@ deal(address(weth), address(sushiXswap), amountToRescue);
         assertEq(user.balance, amountToRescue);
  assertEq(sushi.balanceOf(user), amountToRescue);
     }
+}
+
+    function test_OwnerGuard() public {
