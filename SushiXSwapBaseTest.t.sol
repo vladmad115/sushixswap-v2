@@ -235,3 +235,6 @@ deal(address(weth), address(sushiXswap), amountToRescue);
 }
 
     function test_OwnerGuard() public {
+ vm.startPrank(operator);
+
+        vm.expectRevert();
