@@ -238,3 +238,13 @@ deal(address(weth), address(sushiXswap), amountToRescue);
  vm.startPrank(operator);
 
         vm.expectRevert();
+  sushiXswap.sendMessage(address(stargateAdapter), "");
+    }
+
+    function testFuzz_SwapERC20ToERC20(uint64 amount) public {
+        vm.assume(amount > 0.1 ether);
+
+        deal(address(weth), user, amount);
+
+        // basic swap weth to usdc
+        bytes memory computedRoute = routeProcessorHelper.computeRoute(
