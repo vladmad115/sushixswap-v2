@@ -248,3 +248,5 @@ deal(address(weth), address(sushiXswap), amountToRescue);
 
         // basic swap weth to usdc
         bytes memory computedRoute = routeProcessorHelper.computeRoute(
+   true, // rpHasToken
+            false, // isV2
