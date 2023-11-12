@@ -250,3 +250,5 @@ deal(address(weth), address(sushiXswap), amountToRescue);
         bytes memory computedRoute = routeProcessorHelper.computeRoute(
    true, // rpHasToken
             false, // isV2
+ address(weth), // tokenIn
+            address(usdc), // tokenOut
