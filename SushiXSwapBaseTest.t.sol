@@ -252,3 +252,9 @@ deal(address(weth), address(sushiXswap), amountToRescue);
             false, // isV2
  address(weth), // tokenIn
             address(usdc), // tokenOut
+   500, // fee
+            user // to
+        );
+
+        vm.startPrank(user);
+        ERC20(address(weth)).approve(address(sushiXswap), amount);
