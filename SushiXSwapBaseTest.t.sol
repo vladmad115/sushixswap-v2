@@ -258,3 +258,6 @@ deal(address(weth), address(sushiXswap), amountToRescue);
 
         vm.startPrank(user);
         ERC20(address(weth)).approve(address(sushiXswap), amount);
+
+        IRouteProcessor.RouteProcessorData memory rpd = IRouteProcessor
+            .RouteProcessorData({
