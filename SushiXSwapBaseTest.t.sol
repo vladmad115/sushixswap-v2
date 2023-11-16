@@ -262,3 +262,5 @@ deal(address(weth), address(sushiXswap), amountToRescue);
         IRouteProcessor.RouteProcessorData memory rpd = IRouteProcessor
             .RouteProcessorData({
     tokenIn: address(weth),
+   amountIn: amount,
+                tokenOut: address(usdc),
