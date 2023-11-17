@@ -264,3 +264,4 @@ deal(address(weth), address(sushiXswap), amountToRescue);
     tokenIn: address(weth),
    amountIn: amount,
                 tokenOut: address(usdc),
+  amountOutMin: 0,
