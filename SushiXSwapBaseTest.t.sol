@@ -276,3 +276,5 @@ deal(address(weth), address(sushiXswap), amountToRescue);
         vm.stopPrank();
 
         assertEq(weth.balanceOf(user), 0, "weth balance should be 0");
+ assertGt(
+            usdc.balanceOf(user),
