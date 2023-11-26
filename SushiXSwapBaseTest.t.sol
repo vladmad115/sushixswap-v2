@@ -287,3 +287,6 @@ deal(address(weth), address(sushiXswap), amountToRescue);
    vm.assume(amount > 0.1 ether);
 
         vm.deal(user, amount);
+
+        // swap eth to usdc
+        bytes memory computedRoute = routeProcessorHelper.computeRouteNativeIn(
