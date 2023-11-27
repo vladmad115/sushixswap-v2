@@ -290,3 +290,6 @@ deal(address(weth), address(sushiXswap), amountToRescue);
 
         // swap eth to usdc
         bytes memory computedRoute = routeProcessorHelper.computeRouteNativeIn(
+ address(weth), // wrapToken
+            false,
+            address(usdc),
