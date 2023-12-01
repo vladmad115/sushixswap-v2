@@ -307,3 +307,9 @@ deal(address(weth), address(sushiXswap), amountToRescue);
         assertEq(weth.balanceOf(user), 0, "weth balance should be 0");
   assertGt(
             usdc.balanceOf(user),
+  0,
+            "usdc balance should be greater than 0"
+        );
+    }
+
+    function testFuzz_SwapNativeToERC20(uint64 amount) public {
