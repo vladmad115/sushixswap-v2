@@ -313,3 +313,9 @@ deal(address(weth), address(sushiXswap), amountToRescue);
     }
 
     function testFuzz_SwapNativeToERC20(uint64 amount) public {
+ vm.assume(amount > 0.1 ether);
+
+        vm.deal(user, amount);
+
+        // swap eth to usdc
+        bytes memory computedRoute = routeProcessorHelper.computeRouteNativeIn(
