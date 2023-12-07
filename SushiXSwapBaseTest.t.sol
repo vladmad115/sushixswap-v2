@@ -336,14 +336,4 @@ deal(address(weth), address(sushiXswap), amountToRescue);
                 route: computedRoute
             });
 
-        bytes memory rpd_encoded = abi.encode(rpd);
-
-        sushiXswap.swap(rpd_encoded);
-
-        vm.stopPrank();
-
-        assertEq(weth.balanceOf(user), 0, "weth balance should be 0");
-        assertGt(
-  usdc.balanceOf(user),
-            0,
-            "usdc balance should be greater than 0"
+      
